@@ -7,7 +7,7 @@ namespace Dictionary_Odev
     {
         static void Main(string[] args)
         {
-            List<string> motorAdi = new List<string>(); //ödev
+            List<string> motorAdi = new List<string>(); 
             motorAdi.Add("Kawasaki");
             motorAdi.Add("Yamaha");
             motorAdi.Add("Honda");
