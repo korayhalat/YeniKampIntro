@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Dictionary_Odev
 {
-    class MyDictionary<T>
+    class MyDictionary<T> //
     {
         T[] _array;
         T[] _tempArray;
