@@ -8,12 +8,13 @@ namespace OOP2  //Operasyon sınıfı.
     {
         public void Ekle(Musteri musteri)
         {
-            //if (muster.)
-            //{
-
-            //}
+            Console.WriteLine(musteri.MusteriNo);
 
 
+        }
+        public void Ekle(TuzelMusteri musteri)
+        {
+            Console.WriteLine(musteri.VergiNo);
         }
     }
 }
