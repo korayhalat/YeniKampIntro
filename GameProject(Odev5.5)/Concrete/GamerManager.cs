@@ -15,15 +15,17 @@ namespace GameProject_Odev5._5_.Concrete
             _userValidationService = userValidationService;
         }
 
-        public void Add(Gamer gamer)
+        public bool Add(Gamer gamer)
         {
             if (_userValidationService.Validate(gamer)==true)
             {
-                Console.WriteLine("Kayıt Doğrulamıştır!!");                
+                Console.WriteLine("Kayıt Doğrulamıştır!!");
+                return true;
             }
             else
             {
                 Console.WriteLine("Geçersiz Kayıt!");
+                return false;
                 
             }
         }

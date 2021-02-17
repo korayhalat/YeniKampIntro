@@ -7,7 +7,7 @@ namespace GameProject_Odev5._5_.Abstract
 {
     public interface IGamerService
     {
-        void Add(Gamer gamer);
+        bool Add(Gamer gamer);
         void Delete(Gamer gamer);
         void Update(Gamer gamer);
     }

@@ -10,7 +10,9 @@ namespace GameProject_Odev5._5_
         {
             GamerManager gamerManager = new GamerManager(new NewEUserValidationManager());
             Gamer gamer = new Gamer() { Id = 1, FirstName = "Koray", LastName = "Halat", BirthYear = 1979, TcNo = "123456" };
-            gamerManager.Add(gamer);
+            bool sonuc = gamerManager.Add(gamer);
+            if (!sonuc)
+                return;
             //gamerManager.Add(new Gamer { Id = 1, FirstName = "Koray", LastName = "Halat", BirthYear = 1979, TcNo = "123456" });
 
             Campain campain = new Campain() { Id = 1, CampainName = "Yeni Giriş Kampanyası", CampainTime = 45, CampainDiscont = "%25" };
